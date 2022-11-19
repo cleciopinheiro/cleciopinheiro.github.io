@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+  --backgroundPrimary: rgb(206, 0, 161);
+}
 
 * {
   padding: 0;
@@ -14,9 +17,12 @@ body {
 header {
   background-color: rgb(20, 20, 20);
   padding: 15px 5%;
+  top: 0px;
+  position: fixed;
+  width: 100%;
 }
 
-nav, div {
+nav, .nav_bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,8 +41,21 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: green;
+  background-color: var(--backgroundPrimary);
   color: white;
   font-weight: 500;
   cursor: pointer;
 }
+
+.section-one {
+  background-image: url(images/metaverso.jpg);
+  opacity: 50%;
+}
+
+.section-welcome {
+  max-width: 40%;
+  margin: 0px 5%;
+  padding: 100px;
+}
+
+
